@@ -1,5 +1,8 @@
+package ru.netology.javaqa.JavaQA_HW4.services;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+import ru.netology.javaqa.JavaQA_HW4.services.BonusService;
 
 public class BonusServiceTest {
 
