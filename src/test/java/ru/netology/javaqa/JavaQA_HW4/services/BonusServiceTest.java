@@ -8,11 +8,11 @@ public class BonusServiceTest {
 
     @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/bonus.csv")
-    // Порядок параметров должен точно совпадать с колонками в CSV
+
     public void testCalculate(long expected, long amount, boolean registered) {
         BonusService service = new BonusService();
 
-        // Метод называется calculate и возвращает long
+
         long actual = service.calculate(amount, registered);
 
         Assertions.assertEquals(expected, actual);
